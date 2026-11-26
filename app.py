@@ -4,9 +4,12 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 
-# 1. Konfigurasi Halaman
-st.set_page_config(page_title="RAG Document QA", page_icon="⚖️")
-st.title("⚖️ Asisten Tanya Jawab Dokumen Putusan")
+st.set_page_config(
+    page_title="Tanya Putusan",
+    page_icon="⚖️",
+)
+st.title("⚖️ Tanya Putusan")
+st.caption("Tanya jawab dokumen putusan Mahkamah Agung berbasis RAG. (Bukan nasihat hukum).")
 load_dotenv()
 
 def nama_file(path):
