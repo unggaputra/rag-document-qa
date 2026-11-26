@@ -5,8 +5,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain_chroma import Chroma
 
 # 1. Konfigurasi Halaman
-st.set_page_config(page_title="AI Hukum MA", page_icon="⚖️")
-st.title("⚖️ AI Asisten Putusan Mahkamah Agung")
+st.set_page_config(page_title="RAG Document QA", page_icon="⚖️")
+st.title("⚖️ Asisten Tanya Jawab Dokumen Putusan")
 load_dotenv()
 
 def nama_file(path):
